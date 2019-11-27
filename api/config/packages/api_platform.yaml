@@ -1,5 +1,5 @@
 api_platform:
-    title: Hello API Platform
+    title: Movie Database API For Worldia
     version: 1.0.0
     mapping:
         paths: ['%kernel.project_dir%/src/Entity']
@@ -10,3 +10,12 @@ api_platform:
     # Mercure integration, remove if unwanted
     mercure:
         hub_url: '%env(MERCURE_SUBSCRIBE_URL)%'
+    formats:
+        json:     ['application/json']
+        jsonld:   ['application/ld+json']
+        jsonhal:  ['application/hal+json']
+        jsonapi:  ['application/vnd.api+json']
+        xml:      ['application/xml', 'text/xml']
+        yaml:     ['application/x-yaml']
+        csv:      ['text/csv']
+        html:     ['text/html']
